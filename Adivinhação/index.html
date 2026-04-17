@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="img/imagem.png" alt="">
     <h1>Jogo da Adivinhação</h1>
-    <p>Escolha um número de 0 a 100 e veja o quão perto está. Tente acertar no menor número de tentativas possível. Vamos ver se você é bom!</p>
-    <input type="number" id="numero">
+    <div id="arruma">
+        <p id="escolha"> Escolha um número de 0 a 100 e veja o quão perto está. Tente acertar no menor número de tentativas possível. Vamos ver se você é bom!</p>
+    </div>
+    <input type="number" id="palpite" min="0" max="100">
+    <button onclick="verificarPalpite()">Tentar Palpite</button>
+        <p id="mensagem"></p>
+        <p id="tentativas"></p>
+        <p id="contador"></p>
+    <script src="script.js"></script>
 </body>
 </html>
