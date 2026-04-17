@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(32, 32, 32);
+    font-family:sans-serif;
+    padding-top: 0 auto;
+    margin: 0;
+}
+
+h1{
+    color: rgb(238, 235, 235);
+    text-align: center;
+    font-size: 40px;
+}
+
+nav{
+    width: 100%;
+    padding: 16px;
+    background-color: grey;
+    padding-right: 100%;
+    text-align: right;
+    font-size: 20px;
+    margin: 0 auto;
+    display: fixed;
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+nav > a{
+    text-decoration: none;
+    font-weight: bold;
+    color:  rgb(32, 32, 32);
+    gap: 10px;
+    margin: 15px;
+    z-index: 0;
+    font-size: 25px;
+}
+
+nav > a:hover{
+    color: white;
+}
+
+#imagem-1, #imagem-2, #img-3, #img-4, #img-5, #img-6{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 7%;
+    padding: 20px;
+}
+
+p{
+    width: 50%;
+    text-align: center;
+    color: rgb(238, 234, 234);
+    margin: auto;
+    font-size: 20px;
+    padding: 30px;
+}
+
+
+h2{
+    color: rgb(238, 235, 235);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    width: 40%;
+    border: dashed;
+    padding: 10px;
+}
+
+#bola{
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    left: 200px;
+}
+
+#volei{
+    position: absolute;
+    width: 200px;
+    left: 1700px;
+    top: 500px;
+}
+
+#basquete{
+    position: absolute;
+    width: 100px;
+    left: 300px;
+    top: 300px;
+}
+
+#tenis{
+    position: absolute;
+    width: 150px;
+    left: 1700px;
+    top: 1500px;
+}
+
+#hand{
+    position: absolute;
+    width: 200px;
+    left: 200px;
+    top: 2000px;
+}
+
+#bola, #volei, #basquete, #tenis, #hand{
+    z-index: 1;
+}
+
+
+
+.teste > h4{
+    color: rgb(238, 235, 235);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 70px;
+    width: 40%;
+    padding-top: 70px;
+    position: relative;
+
+}
+
+.teste > ul {
+    position: relative;
+    top: 15px;
+    left: 30%;
+    color: rgb(238, 235, 235);
+    padding: 20px;
+    border: solid 2px white;
+    width: 700px;
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    margin-left: 30px;
+    font-size: 42px;
+    padding-top: 10px;
+}
+
+#van{
+    border: solid 2px green;
+    color: green;
+}
+
+#des{
+    border: solid 2px red;
+    color: red;
+}
+
+.teste{
+    padding-bottom: 100px;
+}
