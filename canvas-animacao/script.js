@@ -26,6 +26,15 @@ let retangulo3 = {
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d")
 
+img = new Image()
+img.src = "img/mao.webp"
+
+let imgX = 200;
+let imgY = 200;
+
+let imgW = 75;
+let imgH = 75;
+
 function desenha_retangulo(ret){
     ctx.beginPath();
     ctx.lineWidth = 5;
@@ -35,11 +44,8 @@ function desenha_retangulo(ret){
 };
 
 function desenha_bola(){
-    img = new Image()
-    img.src = "img/mario.png"
-
     ctx.beginPath()
-    ctx.drawImage(img, 200, 200, 100, 100)
+    ctx.drawImage(img, imgX, imgY, imgW, imgH)
     ctx.closePath();
 }
 
@@ -56,6 +62,9 @@ function desenhar (){
     }
     retangulo1.x = retangulo1.x + mov
 
+    desenha_retangulo(retangulo1)
+    desenha_retangulo(retangulo2)
+    desenha_retangulo(retangulo3)
     desenha_bola()
     requestAnimationFrame(desenhar)
 }
@@ -89,6 +98,11 @@ document.addEventListener ("mousemove", function(evento){
     
     console.log(x_mouse, y_mouse);
 
-    Image.x = x_mouse
-    Image.y = y_mouse
+    imgX = x_mouse - imgW / 2;
+    imgY = y_mouse - imgH / 2;
+
+    if (imgX<0) imgX = 0;
+    if (imgY < 0) imgY = 0;
+    if (imgX + imgW > canvas.width) imgX = canvas.width - imgW;
+    if (imgY + imgH > canvas.height) imgY = canvas.height - imgH;
 })
