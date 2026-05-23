@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Criar Conta</h2>
+        
+        <form action="/cadastro" method="POST">
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="text" name="login" placeholder="Nome de Usuário" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <div class="footer-links">
+            <p>Já tem uma conta? <a href="/login">Faça Login</a></p>
+            <p><a href="/">Voltar para Home</a></p>
+        </div>
+    </div>
+</form>
+</body>
+</html>

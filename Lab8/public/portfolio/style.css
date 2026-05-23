@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    background-color: #88B6EB;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #f4f4f4;
+}
+
+.left h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.right {
+    width: 50%;
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.right h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #565656;
+    max-width: 400px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #bdbcbc;
+}
+
+.redesociais {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.redesociais a {
+  padding: 8px 12px;
+  border: 1px solid #bdbcbc;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.redesociais a:hover {
+  background-color: #bdbcbc;
+  color: white;
+}
+
+/* PROJETOS  */
+
+
+.pagina-projetos {
+  margin: 0;
+  min-height: 100px;
+  background: #88B6EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container-projetos {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.container-projetos h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.projetoss {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.projetoss th, .projetoss td {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.projetoss th {
+  background-color: #3075cf;
+  font-size: 16px;
+}
+
+.projetoss td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.projetoss a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #023373; 
+  /* border: 1.5px solid #023373; */
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.projetoss a:hover {
+  background-color: #0487D9;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: black;
+  background-color: #f4f4f4;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.voltar:hover {
+  background-color: #d0d0d0;
+}
