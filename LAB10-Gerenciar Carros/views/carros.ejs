@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carros</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Carros</h1>
+
+        <% carros.forEach(function(carro){ %>
+
+            <hr>
+
+            <p>Marca: <%= carro.marca %></p>
+
+            <p>Modelo: <%= carro.modelo %></p>
+
+            <p>Ano: <%= carro.ano %></p>
+
+            <p>Quantidade: <%= carro.quantidade %></p>
+
+            <a href="/remover/<%= carro._id %>">
+
+                <button>
+
+                    Remover
+
+                </button>
+
+            </a>
+            <a href="/vender/<%= carro._id %>">
+
+                <button>
+
+                    Vender
+
+                </button>
+
+            </a>
+
+        <% }) %>
+    </div>
+    
+
+</body>
+</html>
